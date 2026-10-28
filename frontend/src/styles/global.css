@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+/* Base: tokens, reset aur shared components (notice, buttons, chips) */
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #163a5f;
+  background: #f5f7fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --blue: #1976d2;
+  --navy: #163a5f;
+  --muted: #7890a7;
+  --line: #dfe9f1;
+  --green: #25895f;
+  --red: #b3261e;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #f5f7fa; line-height: 1.5; }
+h1, h2, h3, p { margin: 0; }
+button { font: inherit; }
+button:focus-visible, a:focus-visible { outline: 3px solid rgba(25,118,210,.35); outline-offset: 4px; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.mono, code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+.hint { color: var(--muted); font-size: 12px; margin: 14px 0 0; }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px; color: var(--blue); font-size: 11px; font-weight: 800; letter-spacing: 1.6px; }
+.eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 4px #e1f1ff; }
+
+.primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 12px 22px; border: 0; border-radius: 8px; color: #fff; background: var(--blue); box-shadow: 0 10px 24px rgba(25,118,210,.2); font-size: 14px; font-weight: 700; cursor: pointer; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
+.primary-button:hover { transform: translateY(-2px); background: #1266ba; box-shadow: 0 13px 28px rgba(25,118,210,.25); }
+.ghost-button { display: inline-flex; align-items: center; justify-content: center; padding: 7px 12px; border: 1px solid #d5e2ee; border-radius: 7px; color: var(--navy); background: #fff; font-size: 12px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background .15s ease, border-color .15s ease; }
+.ghost-button:hover { background: #f1f7fd; border-color: #b9d3ea; }
+.ghost-button.danger { color: var(--red); }
+.ghost-button.danger:hover { background: #fdf1f0; border-color: #efc0bc; }
+
+.notice { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; padding: 12px 14px; border-radius: 8px; margin-bottom: 16px; border: 1px solid; font-size: 13px; overflow-wrap: anywhere; }
+.notice.ok { color: #17794a; background: #e8f5ee; border-color: #b5dcc7; }
+.notice.error { color: var(--red); background: #fbeceb; border-color: #efc0bc; }
+.notice.warn { color: #8a4a00; background: #fdf4e7; border-color: #f0d3a8; }
+.notice.info { color: #1e5f8f; background: #edf5fc; border-color: #c4dcf0; }
+.notice-action { flex: 0 0 auto; padding: 6px 12px; border: 1px solid currentColor; border-radius: 6px; color: inherit; background: #fff; font-size: 12px; font-weight: 700; cursor: pointer; }
+
+.dot { width: 9px; height: 9px; flex: 0 0 auto; border-radius: 50%; background: #bac8d4; }
+.dot.on { background: #43b889; }
+.connection-dot { display: inline-block; width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: #43c997; box-shadow: 0 0 0 4px rgba(67,201,151,.12); }
+
+dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 18px; margin: 0 0 16px; font-size: 13px; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.actions button { padding: 10px 16px; border: 1px solid var(--blue); border-radius: 7px; color: #fff; background: var(--blue); font-weight: 600; cursor: pointer; }
+.actions button.ghost { color: var(--blue); background: #fff; }
+
+.chip { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 800; letter-spacing: .5px; }
+.chip-excel { color: var(--green); background: #e2f6ed; }
+.chip-csv { color: #0f7d86; background: #dff4f5; }
+.chip-image { color: #7048c4; background: #efe9fb; }
+
+@media (max-width: 620px) {
+  dl { grid-template-columns: 1fr; gap: 3px; }
+  dd { margin-bottom: 8px; }
+}

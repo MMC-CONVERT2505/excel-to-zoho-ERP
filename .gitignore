@@ -1,0 +1,15 @@
+# Dependencies aur build (server par npm run build se banta hai)
+node_modules/
+frontend/dist/
+
+# Secrets — Zoho client secret, app password
+.env
+.env.*
+
+# Zoho token + job results (har machine ka apna)
+backend/data/
+
+# Faltu / local
+jobid
+*.zip
+*.log

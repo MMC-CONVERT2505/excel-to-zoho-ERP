@@ -1,0 +1,89 @@
+/* Landing page (Zoho connect se pehle) */
+.site-header { width: min(1180px, calc(100% - 64px)); height: 88px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 2; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--navy); text-decoration: none; font: 800 19px 'Manrope', sans-serif; letter-spacing: -.6px; }
+.brand b { color: var(--blue); }
+.brand-mark { width: 30px; height: 30px; display: inline-block; position: relative; }
+.brand-mark i { position: absolute; width: 19px; height: 9px; border-radius: 5px; transform: rotate(-38deg); }
+.brand-mark i:nth-child(1) { left: 0; top: 4px; background: #1976d2; }
+.brand-mark i:nth-child(2) { left: 6px; top: 10px; background: #55b8e8; }
+.brand-mark i:nth-child(3) { left: 11px; top: 16px; background: #163a5f; }
+.header-status { display: inline-flex; align-items: center; gap: 8px; color: #7b8fa2; font-size: 12px; }
+.header-status i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #f0a33a; }
+
+.home-page { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.hero { width: min(1180px, calc(100% - 64px)); min-height: 600px; margin: 0 auto; display: grid; grid-template-columns: 48% 52%; align-items: center; padding: 44px 0 68px; }
+.hero-copy { position: relative; z-index: 1; }
+.hero h1 { color: var(--navy); font: 800 clamp(42px, 5.2vw, 70px)/1.08 'Manrope', sans-serif; letter-spacing: -3px; }
+.hero h1 span { color: var(--blue); display: block; }
+.hero-subtitle { margin-top: 24px; color: #355a7c; font-size: 19px; font-weight: 600; }
+.hero-description { max-width: 420px; margin: 12px 0 29px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+
+/* Hero illustration */
+.hero-art { position: relative; min-height: 450px; display: grid; place-items: center; }
+.hero-art::before { content: ''; position: absolute; width: 430px; height: 430px; border-radius: 50%; background: radial-gradient(circle, rgba(194,229,250,.8), rgba(234,245,255,.35) 48%, transparent 70%); }
+.art-orbit { position: absolute; border: 1px solid rgba(25,118,210,.12); border-radius: 50%; }
+.orbit-one { width: 560px; height: 220px; transform: rotate(-24deg); }
+.orbit-two { width: 410px; height: 175px; transform: rotate(34deg); }
+.art-card { width: min(430px, 88%); position: relative; padding: 23px; border: 1px solid #d8e7f2; border-radius: 16px; background: rgba(255,255,255,.94); box-shadow: 0 22px 60px rgba(34,94,139,.15); }
+.art-card-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; color: #57728d; font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.ready { display: flex; align-items: center; gap: 7px; color: #43a87d; font-size: 10px; letter-spacing: .3px; }
+.ready i { width: 6px; height: 6px; border-radius: 50%; background: #43b889; }
+.workflow { display: flex; justify-content: space-between; align-items: center; margin: 34px 0 28px; }
+.workflow-tile { width: 120px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.tile-symbol { width: 55px; height: 55px; margin-bottom: 5px; display: grid; place-items: center; border-radius: 14px; font: 800 24px 'Manrope', sans-serif; }
+.excel-tile .tile-symbol { color: var(--green); background: #e2f6ed; }
+.zoho-tile .tile-symbol { color: var(--blue); background: #e2f1ff; }
+.workflow-tile strong { color: var(--navy); font-size: 13px; }
+.workflow-tile small { color: #96a7b8; font-size: 10px; }
+.workflow-arrow { width: 65px; display: flex; align-items: center; color: var(--blue); font-size: 29px; }
+.workflow-arrow span { flex: 1; height: 1px; background: #b8d8f1; }
+.art-card-footer { display: flex; align-items: center; gap: 9px; border-top: 1px solid #edf2f6; padding-top: 17px; color: #7890a7; font-size: 11px; }
+.footer-check { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 50%; background: #e2f6ed; color: var(--green); font-weight: 800; }
+.floating-chip { position: absolute; z-index: 1; right: 3px; top: 80px; display: flex; align-items: center; gap: 9px; padding: 12px 15px; border: 1px solid #e7eff5; border-radius: 9px; background: #fff; box-shadow: 0 12px 30px rgba(34,94,139,.13); color: var(--navy); font-size: 11px; font-weight: 700; }
+.floating-chip span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #e2f6ed; color: var(--green); }
+
+/* Zoho connect panel */
+.home-connect-card { width: min(440px, 100%); margin-top: 24px; padding: 18px; border: 1px solid #dce8f1; border-radius: 14px; background: rgba(255,255,255,.94); box-shadow: 0 14px 38px rgba(34,94,139,.09); text-align: left; }
+.home-connect-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; }
+.home-connect-icon { width: 42px; height: 42px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 12px; background: #e2f1ff; color: var(--blue); font: 800 21px 'Manrope', sans-serif; }
+.home-connect-heading strong, .home-connect-heading small { display: block; }
+.home-connect-heading strong { color: var(--navy); font: 700 14px 'Manrope', sans-serif; }
+.home-connect-heading small { margin-top: 3px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.home-connect-card .panel { padding: 14px; border: 1px solid #e5edf4; border-radius: 9px; background: #fff; }
+.home-connect-card .row { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; }
+.home-connect-card .row h2 { font-size: 14px; }
+.home-connect-card dl { margin-bottom: 12px; font-size: 12px; }
+.home-connect-card .actions button { min-height: 42px; }
+.home-connect-card .notice { margin-bottom: 12px; }
+
+.page-footer { width: min(1180px, calc(100% - 64px)); margin: auto auto 0; padding: 18px 0 25px; display: flex; justify-content: space-between; gap: 15px; color: #9aaaba; font-size: 11px; }
+
+@media (max-width: 900px) {
+  .site-header, .hero, .page-footer { width: min(100% - 40px, 700px); }
+  .hero { grid-template-columns: 1fr; padding-top: 55px; }
+  .hero-copy { text-align: center; }
+  .hero-description, .home-connect-card { margin-left: auto; margin-right: auto; }
+  .hero-art { margin-top: 24px; }
+}
+@media (max-width: 620px) {
+  .site-header { width: calc(100% - 32px); height: 72px; }
+  .brand { gap: 8px; font-size: 16px; }
+  .hero { width: calc(100% - 32px); padding-top: 38px; padding-bottom: 30px; }
+  .hero h1 { font-size: 43px; letter-spacing: -2px; }
+  .hero-subtitle { font-size: 17px; }
+  .hero-description { font-size: 14px; }
+  .hero-art { min-height: 350px; }
+  .hero-art::before { width: 320px; height: 320px; }
+  .orbit-one { width: 360px; height: 160px; }
+  .orbit-two { width: 310px; height: 140px; }
+  .art-card { width: 100%; padding: 17px; }
+  .workflow-tile { width: 95px; }
+  .workflow-arrow { width: 45px; }
+  .floating-chip { right: -4px; top: 35px; transform: scale(.9); transform-origin: right top; }
+  .page-footer { width: calc(100% - 32px); flex-wrap: wrap; }
+}
+
+/* App password screen */
+.lock-page { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0; display: grid; place-items: center; }
+.lock-page .home-connect-card { margin-top: 0; }
+.lock-page .field { min-width: 0; }

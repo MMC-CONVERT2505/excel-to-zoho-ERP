@@ -1,0 +1,13 @@
+{
+  "name": "zoho-erp-auth",
+  "private": true,
+  "description": "Production: server ki backend/.env me NODE_ENV=production, phir npm run build aur npm start",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install --omit=dev",
+    "start": "npm --prefix backend start",
+    "preview": "npm --prefix frontend run preview"
+  }
+}

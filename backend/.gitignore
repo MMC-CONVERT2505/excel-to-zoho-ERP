@@ -1,0 +1,7 @@
+node_modules
+.env
+data/tokens.json
+uploads/
+data/uploads.json
+data/imports/
+data/jobs/
